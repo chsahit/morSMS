@@ -29,11 +29,11 @@ public class MainActivity extends ActionBarActivity {
 			"x", "y", "z", " " };
 
 	String message = "";
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		new pullThread().execute();
 	}
 
 	@Override
@@ -113,6 +113,5 @@ public class MainActivity extends ActionBarActivity {
 		Log.v("msms - p",parsedMessage);
 		message = "";
 		new SadThread().execute(parsedMessage);
-
 	}
 }
