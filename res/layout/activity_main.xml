@@ -1,0 +1,70 @@
+<RelativeLayout 
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" 
+ android:layout_height="fill_parent"
+ android:layout_centerVertical="true">    
+ <TableLayout android:id="@+id/row1"
+ android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+ android:paddingRight="5px"
+android:paddingLeft="5px"
+android:paddingTop="15px"
+android:paddingBottom="5px"
+>
+<TableRow
+android:layout_weight="1"
+android:layout_height="50dip">
+
+ <Button
+     android:layout_width="0dp"
+     android:layout_height="fill_parent"
+     android:layout_marginLeft="4px"
+     android:layout_marginRight="4px"
+     android:layout_weight="1"
+     android:text="."
+     android:textColor="@android:color/white"
+     android:textSize="50sp"
+     android:textStyle="bold"
+     android:onClick="putDot" />
+
+ <Button
+     android:layout_width="0dp"
+     android:layout_height="fill_parent"
+     android:layout_marginLeft="4px"
+     android:layout_marginRight="4px"
+     android:layout_weight="1"
+     android:text="-"
+     android:textColor="@android:color/white"
+     android:textSize="50sp"
+     android:textStyle="bold"
+     android:onClick="putDash"/>
+	
+
+ </TableRow>
+ <TableRow >
+     <Button
+     android:layout_width="0dp"
+     android:layout_height="fill_parent"
+     android:layout_marginLeft="4px"
+     android:layout_marginRight="4px"
+     android:text="Space"
+     android:layout_weight="1"
+     android:textColor="@android:color/white"
+     android:textSize="50sp"
+     android:textStyle="bold"
+      android:onClick="putSpace"/>
+      
+ <Button
+     android:layout_width="0dp"
+     android:layout_height="fill_parent"
+     android:layout_marginLeft="4px"
+     android:layout_marginRight="4px"
+     android:layout_weight="1"
+     android:text="Send"
+     android:textColor="@android:color/white"
+     android:textSize="50sp"
+     android:textStyle="bold"
+     android:onClick="send"/>
+ </TableRow>
+ </TableLayout>
+</RelativeLayout>
